@@ -15,13 +15,17 @@ const Sidebar = () => {
   const [isDivVisible, setIsDivVisible] = useState(false);
 
   const toggleDiv = () => {
-      setIsDivVisible(!isDivVisible);
+    setIsDivVisible(!isDivVisible);
   };
 
-  
-  
+
+
   return (
     <div className="sidebar">
+      <video autoplay="true" muted loop id="video-background">
+        <source src="/videos/istockphoto-1323709916-640_adpp_is.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <ul>
         <li>
           <a href="">
@@ -69,11 +73,11 @@ const Sidebar = () => {
             <FaMehBlank className="icons" /> More
           </a>
         </li>
-        <div  className="sidebar__Btn">
+        <div className="sidebar__Btn">
           <a onClick={toggleDiv} href="#">Setting</a>
-          
+
         </div>
-     
+
       </ul>
     </div>
   );
