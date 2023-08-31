@@ -18,18 +18,18 @@ function App() {
   };
   return (
     <div className="twitter">
-<div style={divStyles} className={`App ${isDarkTheme ? 'dark-theme' : ''}`}>
- 
-<img className="dark" onClick={toggleDarkTheme} src="/images/dark.png"/>
+      <div style={divStyles} className={`App ${isDarkTheme ? 'dark-theme' : ''}`}>
 
-    
-      <Sidebar />
-      <Twittes />
-      <Trends />
-     
-     
-    </div>
-    
+        <img className="dark" onClick={toggleDarkTheme} src="/images/dark.png" />
+
+
+        <Sidebar />
+        <Twittes />
+        <Trends />
+
+
+      </div>
+
     </div>
   );
 }
